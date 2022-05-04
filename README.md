@@ -7,7 +7,6 @@ $ git clone https://github.com/aaronespasa/deepfake-detection.git
 ```
 
 ## Project Structure 🗂
-## Structure
 
 ```
 portfolio
@@ -63,7 +62,7 @@ $ conda install -c conda-forge numpy matplotlib tqdm
 $ pip install albumentations
 ```
 
-### Download the dataset and filter it
+### Download the dataset
 If you want to see the arguments that can be passed to download the dataset, run the following command:
 
 ```sh
@@ -83,6 +82,8 @@ $ python3 training.py
 
 ## Roadmap
 
+Binary Image Classifier:
+
 - [ ] Extract image frame from the videos.
 - [ ] Use a MTCNN to detect the faces and create a new dataset.
 - [ ] Data Augmentation.
@@ -92,10 +93,15 @@ $ python3 training.py
 - [ ] Evaluate the image classifier model using Class Activation Maps.
 - [ ] Model Deployment (for images) using Streamlit.
 - [ ] Write an article describing the project.
+
+Binary Video Classifier:
+
 - [ ] Binary Video Classifier of DeepFakes.
 - [ ] Evaluate the video classifier model using Class Activation Maps.
 - [ ] Model Deployment (for videos) using Streamlit.
 - [ ] Write an article describing how to improve the binary image classifier to work with video.
+
+Binary Video Classifier including audio:
 - [ ] Binary Classifier for DeepFakes using audio (implementing a Transformer architecture)
 - [ ] Model evaluation.
 - [ ] Model deployment using PyTorch Live.
