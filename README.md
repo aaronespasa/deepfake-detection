@@ -6,26 +6,80 @@
 $ git clone https://github.com/aaronespasa/deepfake-detection.git
 ```
 
-🌲 Create a virtual environment and activate it (make sure you're using Python 3.9):
-```sh
-$ python3 -m venv ./venv
+## Project Structure 🗂
+## Structure
+
 ```
-- To activate it in a machine using unix (MacOS or Linux):
-```sh
-$ source ./venv/bin/activate
+portfolio
+│
+└───dataset             # React component files
+│   │   download.py     # Python script to download the dataset
+│
+data                    # The dataset will be stored here
+│   │   ...
+│
+metrics                 # Metrics to be used in the model
+│   │   ...
+│
+└───models              # Models to be used in the project
+│   │   ...
+│
+└───saves               # Checkpoints & State Dicts of PyTorch
+│   │   ...
+│
+└───utils               # Utility files (e.g. helper functions for visualization)
+│   │   ...
+│
+│ training.py           # Python Script for training the model
+│ training.ipynb        # Python Notebook for training the model
+│
+│ README.md
+│ LICENSE  
+│ gitignore  
 ```
 
-- To activate it in a machine using Windows:
+## Set-Up Environment 🌲 
+### Install the necessary dependencies
+1. Install PyTorch and Cuda on a new conda environment ([PyTorch Anaconda commands](https://pytorch.org/get-started/locally/)):
 ```sh
-$ .\venv\Scripts\activate
+$ conda create --name pytorch python=3.8
+$ conda activate pytorch
+$ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
-📄 Install the required libraries:
+2. Install OpenCV:
 ```sh
-$ pip install -r requirements.txt
+$ pip install opencv-python
+$ python3 -c "import cv2; print(cv2.__version__)"
 ```
 
-🎉 Now, you are ready to go!
+3. Install Numpy, Matplotlib and Tqdm:
+```sh
+$ conda install -c conda-forge numpy matplotlib tqdm
+```
+
+4. Install Albumentations:
+```sh
+$ pip install albumentations
+```
+
+### Download the dataset and filter it
+If you want to see the arguments that can be passed to download the dataset, run the following command:
+
+```sh
+$ python3 dataset/download.py -h
+```
+
+1. Download the FaceForensics++ dataset:
+```sh
+$ cd dataset
+$ python3 download.py output_path ../data/
+```
+
+## Train the model 🛠
+```sh
+$ python3 training.py
+```
 
 ## Roadmap
 
