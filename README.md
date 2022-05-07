@@ -85,9 +85,9 @@ $ python training.py
 
 Binary Image Classifier:
 
-- [ ] Extract image frame from the videos.
-- [ ] Use a MTCNN to detect the faces and create a new dataset.
-- [ ] Data Augmentation.
+- [x] Extract image frame from the videos.
+- [x] Use a MTCNN to detect the faces and create a new dataset.
+- [x] Data Augmentation.
 - [ ] Weights & Biases integration.
 - [ ] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
 - [ ] Binary Image Classifier of DeepFakes using a SOTA architecture (ex. Vision Transformers).
