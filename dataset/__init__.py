@@ -12,4 +12,5 @@ from constants import DATA_FOLDER, \
                       FAKE_VIDEOS_FOLDER, \
                       FACES_FOLDER, \
                       FACES_REAL, \
-                      FACES_FAKE
+                      FACES_FAKE, \
+                      FACES_CSV

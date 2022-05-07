@@ -19,3 +19,4 @@ FAKE_VIDEOS_FOLDER = os.path.join(
 FACES_FOLDER = os.path.join(DATA_FOLDER, "faces")
 FACES_REAL = os.path.join(FACES_FOLDER, "real")
 FACES_FAKE = os.path.join(FACES_FOLDER, "fake")
+FACES_CSV = os.path.join(FACES_FOLDER, "faces.csv")
