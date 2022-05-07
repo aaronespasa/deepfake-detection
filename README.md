@@ -49,7 +49,7 @@ $ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 2. Install OpenCV:
 ```sh
 $ pip install opencv-python
-$ python3 -c "import cv2; print(cv2.__version__)"
+$ python -c "import cv2; print(cv2.__version__)"
 ```
 
 3. Install Numpy, Matplotlib and Tqdm:
@@ -66,19 +66,19 @@ $ pip install albumentations
 If you want to see the arguments that can be passed to download the dataset, run the following command:
 
 ```sh
-$ python3 dataset/download.py -h
+$ python dataset/download.py -h
 ```
 
 1. Download the FaceForensics++ dataset:
 ```sh
-$ python3 dataset/download.py data -c c40 -d DeepFakeDetection
-$ python3 dataset/download.py data -c c40 -d DeepFakeDetection_original
+$ python dataset/download.py data -c c40 -d DeepFakeDetection
+$ python dataset/download.py data -c c40 -d DeepFakeDetection_original
 ```
 > Using -c c40 we get the maximum compression to download them fastly.
 
 ## Train the model 🛠
 ```sh
-$ python3 training.py
+$ python training.py
 ```
 
 ## Roadmap
