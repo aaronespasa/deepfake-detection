@@ -71,9 +71,9 @@ $ python3 dataset/download.py -h
 
 1. Download the FaceForensics++ dataset:
 ```sh
-$ cd dataset
-$ python3 download.py output_path ../data/
+$ python3 dataset/download.py output_path data -c c40
 ```
+> Using -c c40 we get the maximum compression to download them fastly.
 
 ## Train the model 🛠
 ```sh
