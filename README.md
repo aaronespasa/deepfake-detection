@@ -71,7 +71,8 @@ $ python3 dataset/download.py -h
 
 1. Download the FaceForensics++ dataset:
 ```sh
-$ python3 dataset/download.py data -c c40
+$ python3 dataset/download.py data -c c40 -d DeepFakeDetection
+$ python3 dataset/download.py data -c c40 -d DeepFakeDetection_original
 ```
 > Using -c c40 we get the maximum compression to download them fastly.
 
