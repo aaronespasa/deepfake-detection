@@ -87,6 +87,7 @@ Binary Image Classifier:
 
 - [x] Extract image frame from the videos.
 - [x] Use a MTCNN to detect the faces and create a new dataset.
+- [ ] Filter the data (remove images which do not contain faces).
 - [x] Data Augmentation.
 - [ ] Weights & Biases integration.
 - [ ] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
