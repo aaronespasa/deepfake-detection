@@ -49,8 +49,7 @@ class Faces(data.Dataset):
         self.transform = transform
         self.split = split
         self.real_label = "real"
-        self.fake_label = "fake"
-    
+
     def __len__(self):
         """Total number of images in the dataset"""
         return len(self.csv)
