@@ -22,8 +22,6 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-from constants import FACES_FOLDER, FACES_CSV
-
 class Faces(data.Dataset):
     """
     PyTorch faces dataset. It uses the faces from the FaceForensics dataset.
@@ -31,11 +29,7 @@ class Faces(data.Dataset):
     It's a dataset for binary image classification, so the images are labeled as
     'fakes' or 'real'.
     """
-    def __init__(self,
-                 root:str=FACES_FOLDER,
-                 csv:str=FACES_CSV,
-                 split:str="training",
-                 transform:bool=None):
+    def __init__(self, root:str, csv:str, split:str="training", transform:bool=None):
         """
         Args:
             root (string): Root directory of the dataset.
@@ -108,6 +102,7 @@ class Faces(data.Dataset):
         Returns:
             tuple: (image, label) where label 'real' or 'fake'
         """
+        idx = int(idx)
         row = self.csv.iloc[idx]
         image = row["name"]
         label = row["label"]
@@ -124,6 +119,8 @@ class Faces(data.Dataset):
         return image, label
 
 if __name__ == "__main__":
+    from constants import FACES_FOLDER, FACES_CSV
+
     dataset = Faces(root=FACES_FOLDER,
                     csv=FACES_CSV,
                     split="training",
