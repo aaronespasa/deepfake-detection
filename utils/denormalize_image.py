@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-def denormalize_image(image:torch.Tensor) -> torch.Tensor:
+def denormalize_image(image:torch.Tensor) -> np.array:
     """
     Denormalize an image.
     Args:

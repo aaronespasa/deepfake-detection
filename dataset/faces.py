@@ -42,7 +42,7 @@ class Faces(data.Dataset):
         self.csv = pd.read_csv(csv)
         self.transform = transform
         self.split = split
-        self.real_label = "real"
+        self.labels = {"real": 0, "fake": 1}
 
     def __len__(self):
         """Total number of images in the dataset"""
@@ -77,7 +77,7 @@ class Faces(data.Dataset):
         """
         # Get the full path to the image
         image = ""
-        if label == self.real_label:
+        if label == "real":
             image = os.path.join(self.root, "real", image_path)
         else:
             image = os.path.join(self.root, "fake", image_path)
@@ -116,7 +116,7 @@ class Faces(data.Dataset):
                 transformation = self.get_val_transformations()
             image = transformation(image=image)["image"]
 
-        return image, label
+        return image, torch.tensor(self.labels[label]).float()
 
 if __name__ == "__main__":
     from constants import FACES_FOLDER, FACES_CSV
@@ -125,14 +125,16 @@ if __name__ == "__main__":
                     csv=FACES_CSV,
                     split="training",
                     transform=True)
-    
+    labels = {0: "real", 1: "fake"}
+
     image, label = dataset[0]
+    label = label.item()
     image = image.permute(1, 2, 0)
     image = image.numpy()
     image = image * 255.0
     image = image.astype(np.uint8)
 
-    plt.title(label)
+    plt.title(labels[int(label)])
     plt.imshow(image)
     plt.show()
     
