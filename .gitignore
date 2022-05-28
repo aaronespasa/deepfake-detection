@@ -133,3 +133,5 @@ data/
 
 # MacOS files
 .DS_Store
+
+.vs/
