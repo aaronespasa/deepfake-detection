@@ -135,3 +135,5 @@ data/
 .DS_Store
 
 .vs/
+
+/wandb
