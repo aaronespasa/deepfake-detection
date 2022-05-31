@@ -137,3 +137,6 @@ data/
 .vs/
 
 /wandb
+
+# Model files
+*.pth
