@@ -9,7 +9,7 @@ $ git clone https://github.com/aaronespasa/deepfake-detection.git
 ## Project Structure 🗂
 
 ```
-portfolio
+deepfake-detection
 │
 └───dataset             # React component files
 │   │   download.py     # Python script to download the dataset
