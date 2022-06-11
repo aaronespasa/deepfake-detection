@@ -87,14 +87,14 @@ Binary Image Classifier:
 
 - [x] Extract image frame from the videos.
 - [x] Use a MTCNN to detect the faces and create a new dataset.
-- [ ] Filter the data (remove images which do not contain faces).
+- [x] Filter the data (remove images which do not contain faces).
 - [x] Data Augmentation.
-- [ ] Weights & Biases integration.
-- [ ] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
+- [x] Weights & Biases integration.
+- [x] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
 - [ ] Binary Image Classifier of DeepFakes using a SOTA architecture (ex. Vision Transformers).
-- [ ] Evaluate the image classifier model using Class Activation Maps.
-- [ ] Model Deployment (for images) using Streamlit.
-- [ ] Write an article describing the project.
+- [x] Evaluate the image classifier model using Class Activation Maps.
+- [x] Model Deployment (for images) using Gradio.
+- [x] Write an article describing the project.
 
 Binary Video Classifier:
 
