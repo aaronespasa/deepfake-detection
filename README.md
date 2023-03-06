@@ -129,4 +129,4 @@ Binary Video Classifier including audio:
 [Kaggle Dataset augmented by Meta](https://ai.facebook.com/datasets/dfdc/): Dataset from the kaggle competition with more resources provided by Meta.
 
 ## Presentation
-https://docs.google.com/presentation/d/1Cj1c1Npyv3smCOE2v5zVS-LzkGSUkC61/edit?usp=sharing&ouid=103376187494457396648&rtpof=true&sd=true
+https://docs.google.com/presentation/d/1KARG_bZaV0GYAYgLdSvQiYWm0klWpf7X/edit?usp=sharing&ouid=104796589432459456901&rtpof=true&sd=true
