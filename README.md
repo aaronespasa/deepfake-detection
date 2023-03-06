@@ -1,6 +1,8 @@
 # DeepFake Detection with PyTorch 🧐
 
-This project aims to identify if a person from an image was generated using a computer (deepfake) or if it's a real image.
+The objective of this project is to distinguish between computer-generated (deepfake) and real individuals appearing in a video. However, it is important to note that this project is not optimized for identifying hyper-realistic generated images, but instead primarily focuses on analyzing screenshots taken from a video.
+
+You can try the [deepfake detector](https://huggingface.co/spaces/aaronespasa/deepfake-detection) by uploading a screenshot from a deepfake video (for example from YouTube) and see the results.
 
 <img src="https://github.com/aaronespasa/deepfake-detection/blob/main/thumbnail.png"/>
 
