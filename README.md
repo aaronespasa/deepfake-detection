@@ -1,5 +1,13 @@
 # DeepFake Detection with PyTorch 🧐
 
+This project aims to identify if a person from an image was generated using a computer (deepfake) or if it's a real image.
+
+<img src="https://github.com/aaronespasa/deepfake-detection/blob/main/thumbnail.png"/>
+
+<h3 align="center">
+  <a href="https://huggingface.co/spaces/aaronespasa/deepfake-detection">Click here to try the deepfake detector</a>
+</h3>
+
 ## Getting Started 🛠
 🗂 Clone the repository (the command below uses HTTPS):
 ```sh
