@@ -1,5 +1,15 @@
 # DeepFake Detection with PyTorch 🧐
 
+The objective of this project is to distinguish between computer-generated (deepfake) and real individuals appearing in a video. However, it is important to note that this project is not optimized for identifying hyper-realistic generated images, but instead primarily focuses on analyzing screenshots taken from a video.
+
+You can try the [deepfake detector](https://huggingface.co/spaces/aaronespasa/deepfake-detection) by uploading a screenshot from a deepfake video (for example from YouTube) and see the results.
+
+<img src="https://github.com/aaronespasa/deepfake-detection/blob/main/thumbnail.png"/>
+
+<h3 align="center">
+  <a href="https://huggingface.co/spaces/aaronespasa/deepfake-detection">Click here to try the deepfake detector</a>
+</h3>
+
 ## Getting Started 🛠
 🗂 Clone the repository (the command below uses HTTPS):
 ```sh
@@ -119,4 +129,4 @@ Binary Video Classifier including audio:
 [Kaggle Dataset augmented by Meta](https://ai.facebook.com/datasets/dfdc/): Dataset from the kaggle competition with more resources provided by Meta.
 
 ## Presentation
-https://docs.google.com/presentation/d/1Cj1c1Npyv3smCOE2v5zVS-LzkGSUkC61/edit?usp=sharing&ouid=103376187494457396648&rtpof=true&sd=true
+https://docs.google.com/presentation/d/1KARG_bZaV0GYAYgLdSvQiYWm0klWpf7X/edit?usp=sharing&ouid=104796589432459456901&rtpof=true&sd=true
