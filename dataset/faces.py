@@ -109,12 +109,14 @@ class Faces(data.Dataset):
 
         image = self._read_image(image, label)
 
-        if self.transform:
-            if self.split == "training":
-                transformation = self.get_train_transformations()
-            else:
-                transformation = self.get_val_transformations()
-            image = transformation(image=image)["image"]
+        if self.transform and self.split == "training":
+            transformation = self.get_train_transformations()
+        else:
+            # apply the validation transformation if self split is training
+            # and self.transform is False to apply the resize and totensor
+            transformation = self.get_val_transformations()
+        
+        image = transformation(image=image)["image"]
 
         return image, torch.tensor(self.labels[label]).float()
 

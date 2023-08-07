@@ -9,7 +9,7 @@ $ git clone https://github.com/aaronespasa/deepfake-detection.git
 ## Project Structure 🗂
 
 ```
-portfolio
+deepfake-detection
 │
 └───dataset             # React component files
 │   │   download.py     # Python script to download the dataset
@@ -87,14 +87,14 @@ Binary Image Classifier:
 
 - [x] Extract image frame from the videos.
 - [x] Use a MTCNN to detect the faces and create a new dataset.
-- [ ] Filter the data (remove images which do not contain faces).
+- [x] Filter the data (remove images which do not contain faces).
 - [x] Data Augmentation.
-- [ ] Weights & Biases integration.
-- [ ] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
+- [x] Weights & Biases integration.
+- [x] Binary Image Classifier of DeepFakes using a non-SOTA architecture (ex.: InceptionV3 or ResNet50).
 - [ ] Binary Image Classifier of DeepFakes using a SOTA architecture (ex. Vision Transformers).
-- [ ] Evaluate the image classifier model using Class Activation Maps.
-- [ ] Model Deployment (for images) using Streamlit.
-- [ ] Write an article describing the project.
+- [x] Evaluate the image classifier model using Class Activation Maps.
+- [x] Model Deployment (for images) using Gradio.
+- [x] Write an article describing the project.
 
 Binary Video Classifier:
 
@@ -118,3 +118,5 @@ Binary Video Classifier including audio:
 
 [Kaggle Dataset augmented by Meta](https://ai.facebook.com/datasets/dfdc/): Dataset from the kaggle competition with more resources provided by Meta.
 
+## Presentation
+https://docs.google.com/presentation/d/1Cj1c1Npyv3smCOE2v5zVS-LzkGSUkC61/edit?usp=sharing&ouid=103376187494457396648&rtpof=true&sd=true

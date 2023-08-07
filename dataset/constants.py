@@ -11,10 +11,10 @@ import os
 
 DATA_FOLDER = os.path.join("..", "data")
 ORIGINAL_VIDEOS_FOLDER = os.path.join(
-    DATA_FOLDER, "original_sequences", "actors", "c40", "videos"
+    DATA_FOLDER, "original_sequences", "actors", "c23", "videos"
 )
 FAKE_VIDEOS_FOLDER = os.path.join(
-    DATA_FOLDER, "manipulated_sequences", "DeepFakeDetection", "c40", "videos"
+    DATA_FOLDER, "manipulated_sequences", "DeepFakeDetection", "c23", "videos"
 )
 FACES_FOLDER = os.path.join(DATA_FOLDER, "faces")
 FACES_REAL = os.path.join(FACES_FOLDER, "real")
